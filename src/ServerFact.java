@@ -24,9 +24,13 @@ public class ServerFact {
             DataInputStream in = new DataInputStream(service.getInputStream());
 
             // Calculating the factorial of the number that we got from the client
+            int data = in.read();
             System.out.println("Data received in the server ...");
+            System.out.println(data);
+
             System.out.println("Calculating factorial ...");
-            int f = fact(in.read());
+            int f = fact(data);
+            System.out.println("Factorial is = " + f);
 
             // Sending data to the client
             out.write(f);
