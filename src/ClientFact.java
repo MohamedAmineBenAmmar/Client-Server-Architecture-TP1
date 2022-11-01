@@ -2,6 +2,8 @@ import java.net.*;
 import java.io.*;
 import java.util.Scanner;
 
+// Test class
+
 public class ClientFact {
     public static void main(String[] args){
         try{
